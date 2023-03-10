@@ -32,7 +32,7 @@ def uploadDataToMDB(tweet_df):
     dataToMDB = tweet_df.to_dict('records')
 
 
-    connection = pymongo.MongoClient("mongodb://Aaj:Aaj2606@ac-efdo7na-shard-00-00.5jlca6i.mongodb.net:27017,ac-efdo7na-shard-00-01.5jlca6i.mongodb.net:27017,ac-efdo7na-shard-00-02.5jlca6i.mongodb.net:27017/?ssl=true&replicaSet=atlas-r7j66y-shard-0&authSource=admin&retryWrites=true&w=majority")
+    connection = pymongo.MongoClient("mongodb://Aaj:****@ac-efdo7na-shard-00-00.5jlca6i.mongodb.net:27017,ac-efdo7na-shard-00-01.5jlca6i.mongodb.net:27017,ac-efdo7na-shard-00-02.5jlca6i.mongodb.net:27017/?ssl=true&replicaSet=atlas-r7j66y-shard-0&authSource=admin&retryWrites=true&w=majority")
 
     db = connection['Twitter']
     coll = db['scrapped_tweet']
